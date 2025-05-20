@@ -96,7 +96,7 @@ function cancelAddLesson() {
 //end ẩn hiện form
 
 //call api khoas hoc
-fetch('http://localhost:3000/admin/api/lesson/add')
+fetch('/admin/api/lesson/add')
     .then(response =>{
         if(! response.ok){
             throw new Error("Failed to fetch course list")

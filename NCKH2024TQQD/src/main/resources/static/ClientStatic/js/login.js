@@ -13,7 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
-        const apiUrl = `${apiBaseUrl}/api/user/login`;
+        const apiUrl = `/api/user/login`;
 
         const response = await fetch(apiUrl, {
             method: "POST",
@@ -86,7 +86,7 @@ function showFormForgot() {
 
         }
         console.log(data);
-        fetch("http://localhost:3000/api/user/register",{
+        fetch("/api/user/register",{
 
             method: "POST",
             headers : {
